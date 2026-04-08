@@ -1,5 +1,5 @@
 # Personal Finance App
-A simple and fast personal finance app focused on reducing friction in daily expense tracking.
+A simple and fast personal finance app focused on reducing friction in daily financial tracking.
 
 ## Problem
 Many people try to manage their personal finances but fail to stay consistent over time.
@@ -12,7 +12,7 @@ This product is designed for people who:
 - Struggle to stay consistent due to complexity or friction
 
 ## Value Proposition
-Track your financial transactions in seconds, without friction.
+Track your transactions in seconds, without friction.
 This product focuses on simplicity and speed, making it effortless to register transactions and maintain control over your finances.
 
 ## MVP Scope
@@ -36,7 +36,7 @@ This product focuses on simplicity and speed, making it effortless to register t
 - Cloud sync
 
 ## Differentiator
-This product focuses on extreme simplicity and speed.
+This product prioritizes extreme simplicity and speed over feature richness.
 Instead of adding more features, it removes friction — making financial tracking fast, lightweight, and easy to maintain over time.
 
 ## Vision
