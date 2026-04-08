@@ -44,8 +44,7 @@ A financial tool that people actually use every day — not because they have to
 
 ---
 
-## Architecture
-
+# Architecture
 See [Architecture Overview](./docs/architecture.md)
 
 
