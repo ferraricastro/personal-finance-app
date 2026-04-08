@@ -1,13 +1,15 @@
-# Architecture Overview
-- Type: Monorepo
-- Architecture: Client-server (local-first)
-- API Style: REST
+# Architecture
 
-# Frontend
-- Stack: React + TypeScript
-- Runtime: Tauri (desktop)
-- State Management: Zustand
-### Structure:
+## Overview
+- **Type:** Monorepo  
+- **Architecture:** Client-server (local-first)  
+- **API Style:** REST  
+
+## Frontend
+- **Stack:** React + TypeScript  
+- **Runtime:** Tauri (desktop)  
+- **State Management:** Zustand  
+### Structure
 ```
 apps/desktop/src/
   features/
@@ -15,27 +17,27 @@ apps/desktop/src/
   app/
 ```
 
-# Backend
-- Runtime: Node.js
-- Language: TypeScript
-- Framework: Fastify
-### Structure:
+## Backend
+- **Runtime:** Node.js  
+- **Language:** TypeScript  
+- **Framework:** Fastify  
+### Structure
 ```
 services/api/src/
-  controllers/
-  services/
-  repositories/
+controllers/
+services/
+repositories/
 ```
 
-# Database
-- Database: SQLite
-- ORM: Prisma
+## Database
+- **Database:** SQLite  
+- **ORM:** Prisma  
 
-# Monorepo Structure
+## Monorepo Structure
 ```
 /apps
-  /desktop
+/desktop
 
 /services
-  /api
+/api
 ```
