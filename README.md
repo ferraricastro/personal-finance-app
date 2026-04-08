@@ -6,12 +6,11 @@ A simple and fast personal finance app focused on daily consistency
 - Architecture: Client-server (local-first)
 - API Style: REST
 ---
-### **Frontend**
+# Frontend
 - Stack: React + TypeScript
 - Runtime: Tauri (desktop)
 - State Management: Zustand
----
-### **Structure:**
+### Structure:
 ```
 apps/desktop/src/
   features/
@@ -19,12 +18,11 @@ apps/desktop/src/
   app/
 ```
 ---
-### **Backend**
+# Backend
 - Runtime: Node.js
 - Language: TypeScript
 - Framework: Fastify
----
-### ** Structure:**
+### Structure:
 ```
 services/api/src/
   controllers/
@@ -32,11 +30,11 @@ services/api/src/
   repositories/
 ```
 ---
-### **Database**
+# Database
 - Database: SQLite
 - ORM: Prisma
 ---
-### **Monorepo Structure**
+# Monorepo Structure
 ```
 /apps
   /desktop
