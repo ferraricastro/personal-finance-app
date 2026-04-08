@@ -42,14 +42,18 @@ Instead of adding more features, it removes friction — making financial tracki
 ## Vision
 A financial tool that people actually use every day — not because they have to, but because it’s simple enough that they don’t avoid it.
 
+## Tech Stack
+
+- React + TypeScript
+- Tauri
+- Node.js (Fastify)
+- SQLite (Prisma)
+- Zustand
 
 ## Architecture (Summary)
-
 - Monorepo
 - Client-server (local-first)
-- React + Tauri (frontend)
-- Node.js + Fastify (backend)
-- SQLite + Prisma
+- REST API
 
 → Full details: [Architecture Docs](./docs/architecture.md)
 
