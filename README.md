@@ -42,7 +42,9 @@ Instead of adding more features, it removes friction — making financial tracki
 ## Vision
 A financial tool that people actually use every day — not because they have to, but because it’s simple enough that they don’t avoid it.
 
+
 ---
+
 
 ## Tech Stack
 - **Frontend:** React + TypeScript
@@ -58,7 +60,9 @@ A financial tool that people actually use every day — not because they have to
 
 📄 Full details: [Architecture Docs](./docs/architecture.md)
 
+
 ---
+
 
 ## Status
 
