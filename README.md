@@ -1,7 +1,7 @@
 # personal-finance-app
 A simple and fast personal finance app focused on daily consistency
 
-#Architecture Overview
+# Architecture Overview
 - Type: Monorepo
 - Architecture: Client-server (local-first)
 - API Style: REST
@@ -24,7 +24,7 @@ apps/desktop/src/
 - Language: TypeScript
 - Framework: Fastify
 ---
-###** Structure:**
+### ** Structure:**
 ```
 services/api/src/
   controllers/
