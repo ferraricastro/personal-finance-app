@@ -2,13 +2,13 @@
 
 ## Overview
 - **Type:** Monorepo  
-- **Architecture:** Client-server (local-first)  
-- **API Style:** REST  
+- **Architecture:** Layered architecture (controller → service → repository) 
+- **Design Approach:** Clean architecture principles (simplified)
+- **API Style:** REST API
 
 ## Frontend
-- **Stack:** React + TypeScript  
-- **Runtime:** Tauri (desktop)  
-- **State Management:** Zustand  
+- **Stack:** React + TypeScript
+  
 ### Structure
 ```
 apps/desktop/src/
@@ -20,13 +20,15 @@ apps/desktop/src/
 ## Backend
 - **Runtime:** Node.js  
 - **Language:** TypeScript  
-- **Framework:** Fastify  
+- **Framework:** NestJS  
 ### Structure
 ```
 services/api/src/
-controllers/
-services/
-repositories/
+  modules/
+    transactions/
+      transactions.controller.ts
+      transactions.service.ts
+      transactions.module.ts
 ```
 
 ## Database
@@ -36,8 +38,8 @@ repositories/
 ## Monorepo Structure
 ```
 /apps
-/desktop
+  /desktop
 
 /services
-/api
+  /api
 ```
