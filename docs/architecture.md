@@ -2,19 +2,33 @@
 
 ## Overview
 - **Type:** Monorepo  
-- **Architecture:** Layered architecture (controller → service → repository) 
-- **Design Approach:** Clean architecture principles (simplified)
+- **Architecture:** Clean architecture
 - **API Style:** REST API
 
 ## Frontend
 - **Stack:** React + TypeScript
+- **Data Fetching:** TanStack Query 
   
 ### Structure
 ```
 apps/desktop/src/
-  features/
-  shared/
-  app/
+  app/                # app setup (providers, routing, global config)
+  features/           # feature-based modules
+    transactions/
+      components/
+      hooks/
+      services/       # API calls (per feature)
+      types/
+      pages/
+  shared/             # reusable code across features
+    components/
+    hooks/
+    utils/
+    types/
+  lib/                # external libs/config wrappers
+    api/              # HTTP client (fetch/axios)
+    query/            # TanStack Query setup
+  styles/             # global styles (if needed)
 ```
 
 ## Backend
@@ -26,14 +40,20 @@ apps/desktop/src/
 services/api/src/
   modules/
     transactions/
-      transactions.controller.ts
-      transactions.service.ts
+      domain/
+        entities/
+      application/
+        use-cases/
+      infrastructure/
+        repositories/
+      interfaces/
+        transactions.controller.ts
       transactions.module.ts
 ```
 
 ## Database
 - **Database:** SQLite  
-- **ORM:** Prisma  
+- **ORM:** TypeORM 
 
 ## Monorepo Structure
 ```
