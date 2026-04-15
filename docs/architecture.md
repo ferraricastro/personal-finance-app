@@ -38,17 +38,17 @@ apps/desktop/src/
 ### Structure
 ```
 services/api/src/
-  modules/
-    transactions/
-      domain/
+  modules/                      # domain modules (feature-based, aligned with business)
+    transactions/     
+      domain/                   # core business rules 
         entities/
-      application/
-        use-cases/
-      infrastructure/
-        repositories/
-      interfaces/
-        transactions.controller.ts
-      transactions.module.ts
+      application/              # use cases (business logic orchestration)
+        use-cases/                  
+      infrastructure/           # external implementations
+        repositories/             
+      interfaces/               # entry points
+        transactions.controller.ts  
+      transactions.module.ts    # NestJS module
 ```
 
 ## Database
